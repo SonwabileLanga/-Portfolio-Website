@@ -175,21 +175,24 @@
 					<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="https://getform.io/f/9b656531-e137-4c98-b6b5-68504a9d9998">
+							<form method="post" data-netlify="true">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" required="" placeholder="Name" />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" name="email" id="email" required="" placeholder="Email" />
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
+										<input type="text" name="subject" id="subject" required="" placeholder="Subject" />
 									</div>
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
+
 									</div>
-									<div class="col-12">
+									<div class="field">
+										<div data-netlify-recaptcha="true"></div>
+										<div class="col-12">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" /></li>
 											<li><input type="reset" value="Clear Form" class="alt" /></li>
@@ -228,12 +231,15 @@
 			</article>
 
 		<!-- Scripts -->
+			<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			
 
 	</body>
 </html>
